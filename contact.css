@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  background-image: url(./images/website/Wedding\ Card\ jpg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+  text-align: center;
+ 
+  font-size: 5em;
+  margin-top: 60px;
+ 
+  margin-bottom: 40px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.contact-container {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+}
+
+.contact-info-box h2 {
+  font-family: "Playfair Display", serif;
+  color: #2f2f2f;
+  font-weight: 700;
+}
+
+.contact-info-box p,
+.contact-info-box a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.contact-form label {
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 500;
+}
+.map-container {
+  margin-top: 60px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.map-container h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #2f2f2f;
+}
+
+
+
+.bottom-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  
+}
+
+.banner-text {
+  font-family: "Tangerine", cursive;
+  font-size: 2em;
+  margin: 0;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: white
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+}
