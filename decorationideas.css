@@ -1,0 +1,271 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center; /* Keep vertical centering */
+  align-items: center;
+  background-color: #f9f9f9;
+  background-image: url(./images/website/Wedding\ Card\ jpg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(70%); /* Adjust brightness for text visibility */
+}
+header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Existing tangerine-bold */
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+  text-align: center;
+  /* Increased font size */
+  font-size: 5em;
+  /* Adjust this value to make it bigger */
+  /* Moved it up by reducing the bottom margin and potentially adding a negative top margin */
+  margin-top: 60px;
+  /* Try adjusting this value to move it up */
+  margin-bottom: 40px;
+  /* Reduced bottom margin to bring it closer to the banner */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+/* New Navbar Styling */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: white
+}
+
+/* New Responsive Design */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+}
+
+/* Modal Styles (Professional Update) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.6); /* Slightly more opaque for focus */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* Adjust top margin */
+    padding: 30px; /* More generous padding */
+    border-radius: 10px; /* Still a soft corner */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1); /* More substantial, professional shadow */
+    width: 40%;
+    max-width: 400px;
+    text-align: left; /* Align text left for better readability in a form */
+    font-family: 'Poppins', sans-serif; /* Ensure consistent professional font */
+    background-image: url('./images/website/Monstera\ Production.jpg'); /* Sets a background image for the form area. Replace the path with your image's location */
+    background-size: cover; /* Scales the background image to cover the entire form area, potentially cropping some parts */
+    background-repeat: no-repeat; /* Prevents the background image from repeating or tiling */
+    background-position: center; /* Centers the background image within the form area */
+  }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.close-button {
+    color: #555; /* Darker, more serious close button */
+    float: right;
+    font-size: 28px;
+    font-weight: normal; /* Less playful */
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+}
+
+.close-button:hover,
+.close-button:focus {
+    opacity: 1;
+    color: #333;
+}
+
+/* Form Styles (Professional Update) */
+.form-group {
+    margin-bottom: 25px; /* Good spacing */
+}
+
+.pretty-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+    font-size: 1em; /* Slightly larger, clear label */
+}
+
+.form-control {
+    width: calc(100% - 20px);
+    padding: 12px; /* Good input padding */
+    border: 1px solid #ccc; /* Standard border */
+    border-radius: 6px; /* Soft corners */
+    box-sizing: border-box;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Standard professional focus color (Bootstrap blue) - you can change to your green if preferred */
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* Standard focus shadow */
+}
+
+.submit-button {
+    background-color: #198754; /* Your professional green */
+    color: #fff;
+    padding: 14px 30px; /* Good button size */
+    border: none;
+    border-radius: 8px; /* Soft button corners */
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.submit-button:hover {
+    background-color: #13633d; /* Darker hover state */
+}
+
+/* Heading and Text (Professional Update) */
+.fun-heading {
+    color: white; /* Professional dark heading */
+    font-family: 'Playfair Display', serif; /* Elegant heading font */
+    font-size: 1.7em; /* Slightly larger */
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center; /* Center the heading above the form */
+}
+
+.pretty-text {
+    color: white; /* Professional body text color */
+    margin-bottom: 30px;
+    font-style: normal; /* No playful italics */
+    font-size: 1em;
+    text-align: center; /* Center the introductory text */
+}
+
+/* Submission Message (Professional Update) */
+.message {
+    padding: 18px;
+    margin-top: 25px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f0f9ff; /* Light, professional success background */
+    color: #007bff; /* Professional success text color */
+    border: 1px solid #bee5eb; /* Subtle border */
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* Overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Existing bottom-banner */
+.bottom-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+
+}
+
+/* Existing banner-text */
+.banner-text {
+  font-family: "Tangerine", cursive;
+  font-size: 2em;
+  margin: 0;
+  padding-left: 100%;
+  white-space: nowrap;
+  animation: scrollText 60s linear infinite; 
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(0%); /* Start at the initial off-screen position */
+    }
+    100% {
+        transform: translateX(-150%); /* Move it far enough to the left to disappear */
+    }
+}
+
