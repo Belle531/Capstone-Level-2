@@ -164,6 +164,7 @@ header {
 
 .bottom-banner {
   position: fixed;
+  font-family: "Tangerine", cursive !important; 
   bottom: 0;
   left: 0;
   width: 100%;
@@ -177,7 +178,7 @@ header {
 }
 
 .banner-text {
-  font-family: "Tangerine", cursive;
+  font-family: "Tangerine", cursive !important;
   font-size: 2em;
   margin-top: 60;
 }
@@ -231,7 +232,7 @@ header {
 }
 
 .banner-text {
-  font-family: "Tangerine", cursive;
+  font-family: "Tangerine", cursive !important;
   font-size: 2em;
   margin: 0;
   padding-left: 100%;

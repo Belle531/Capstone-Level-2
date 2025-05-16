@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('search-input');
     const searchButton = document.getElementById('search-button');
     const imageResultsContainer = document.getElementById('image-results');
-    const pexelsApiKey = 'YOUR_API_KEY'; // Replace with your actual Pexels API key
+    const pexelsApiKey = ''; // Replace with your actual Pexels API key
     const loadingSpinner = document.getElementById('loading-spinner');
 
 
