@@ -1,4 +1,3 @@
-/* services.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -26,9 +25,9 @@ header {
     font-style: normal;
     color: black;
     text-align: center;
-    font-size: 4em; /* Reduced font size */
-    margin-top: px;
-    margin-bottom: 15px; /* Reduced margin */
+    font-size: 4em; 
+    margin-top: 30px;
+    margin-bottom: 15px;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
@@ -40,7 +39,7 @@ header {
 .poppins-semibold {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 1.1rem; /* Slightly reduced font size */
+    font-size: 1.1rem; 
 }
 
 .bottom-banner {
@@ -50,7 +49,7 @@ header {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    padding: 10px 15px; /* Reduced padding */
+    padding: 10px 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +58,7 @@ header {
 
 .banner-text {
     font-family: "Tangerine", cursive;
-    font-size: 1.8em; /* Reduced font size */
+    font-size: 1.8em; 
     margin: 0;
 }
 
@@ -73,7 +72,7 @@ header {
 }
 
 .navbar .active {
-    font-weight: bold; /* Highlight the active link */
+    font-weight: bold; 
 }
 
 .service-card {
@@ -90,26 +89,26 @@ header {
 
 .service-card .card-title {
     color: #333;
-    margin-bottom: 0.6rem; /* Reduced margin */
-    font-size: 1rem; /* Reduced font size */
+    margin-bottom: 0.6rem; 
+    font-size: 1rem; 
 }
 
 .service-card .card-text {
     color: #666;
-    font-size: 0.85rem; /* Reduced font size */
-    margin-bottom: 0.4rem; /* Reduced margin */
+    font-size: 0.85rem; 
+    margin-bottom: 0.4rem; 
 }
 
 #image-results img {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    margin-bottom: 0.8rem; /* Reduced margin */
+    margin-bottom: 0.8rem; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 #spinner {
-    margin-left: 0.4rem; /* Reduced margin */
+    margin-left: 0.4rem; 
 }
 
 @media (max-width: 768px) {
@@ -118,7 +117,7 @@ header {
         flex-direction: column;
         gap: 10px;
         background-color: rgba(0, 0, 0, 0.9);
-        padding: 15px; /* Reduced padding */
+        padding: 15px;
         position: absolute;
         top: 100%;
         right: 0;
@@ -135,36 +134,36 @@ header {
     }
 
     .tangerine-bold {
-        font-size: 2.5em; /* Reduced font size */
+        font-size: 2.5em; 
         margin-top: 30px;
-        margin-bottom: 10px; /* Reduced margin */
+        margin-bottom: 10px; 
     }
 
     .bottom-banner .banner-text {
-        font-size: 1.3em; /* Reduced font size */
+        font-size: 1.3em; 
     }
 }
 
-/* Styling for the services table section */
+
 .table-responsive {
-    margin-top: 5px; /* Reduced margin */
-    margin-bottom: 15px; /* Reduced margin */
+    margin-top: 5px;
+    margin-bottom: 15px; 
     border: 1px solid #ddd;
     border-radius: 8px;
-    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    overflow-x: auto; 
 }
 
 .table {
     width: 100%;
-    margin-bottom: 0.8rem; /* Reduced margin */
+    margin-bottom: 0.8rem; 
     color: #212529;
     border-collapse: collapse;
-    font-size: 0.9rem; /* Reduced font size */
+    font-size: 0.9rem; 
 }
 
 .table th,
 .table td {
-    padding: 0.6rem; /* Reduced padding */
+    padding: 0.6rem; 
     vertical-align: top;
     border-top: 1px solid #dee2e6;
     text-align: left;
@@ -173,7 +172,7 @@ header {
 .table thead th {
     vertical-align: bottom;
     border-bottom: 2px solid #dee2e6;
-    font-size: 1rem; /* Slightly reduced font size for header */
+    font-size: 1rem; 
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
@@ -195,50 +194,69 @@ header {
     color: #495057;
 }
 
-/* Style for the filter dropdown */
+
 .form-select {
     width: 100%;
-    max-width: 250px; /* Reduced max width */
-    margin-bottom: 8px; /* Reduced margin */
+    max-width: 250px; 
     font-family: 'Poppins', sans-serif;
-    font-size: 0.9rem; /* Reduced font size */
+    font-size: 0.9rem; 
     border-radius: 6px;
     border: 1px solid #ccc;
-    padding: 0.4rem 0.6rem; /* Reduced padding */
+    padding: 0.4rem 0.6rem; 
 }
 
 .form-label {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    margin-bottom: 0.2rem; /* Reduced margin */
+    margin-bottom: 0.2rem; 
     display: block;
     color: #333;
-    font-size: 1rem; /* Slightly reduced font size */
+    font-size: 1rem; 
 }
 
-/* Styling for the meal suggestions section */
 #mealResultsContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust minmax for smaller cards */
-    gap: 15px; /* Reduced gap */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+}
+
+#mealResultsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* slightly wider cards */
+    gap: 20px;  /* space between cards */
+    padding: 10px;
 }
 
 .meal-card {
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    height: 100%; /* Make cards take full height of the row */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    min-height: 350px;
+    max-width: 100%; /* fill grid cell width */
+    transition: box-shadow 0.3s ease;
 }
 
 .meal-card img {
     width: 100%;
-    height: auto;
+    height: 180px;
+    object-fit: cover;
     border-bottom: 1px solid #eee;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .meal-card-body {
-    padding: 10px; 
+    padding: 15px;
+    font-size: 1rem;
+    color: #333;
+    flex-grow: 1;
+}
+
+.meal-card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    transform: translateY(-4px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
