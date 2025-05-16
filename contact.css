@@ -1,23 +1,153 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f9f9f9;
-  background-image: url(./images/website/Wedding\ Card\ jpg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    background-image: url(./images/website/Wedding\ Card\ jpg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 header {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center; /* Center content within the contact card */
+}
+
+.contact-card h2 {
+    font-family: "Playfair Display", serif;
+    color: #2f2f2f;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.contact-card p,
+.contact-card a,
+.contact-card ul,
+.contact-card li {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+}
+
+/* Style for the specific contact information image */
+.contact-info-image {
+    width: 100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make it circular if you like */
+    margin-bottom: 10px; /* Add some space below the image */
+    display: block; /* Prevent inline behavior */
+    margin-left: auto;
+    margin-right: auto; /* Center the image within the card */
+    object-fit: cover; /* Ensure the image covers the circle without distortion */
+}
+
+.side-by-side-container {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+.testimonial-container {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.testimonial-container h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: #2f2f2f;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.testimonial {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.testimonial img {
+    width: 80px; /* Reduced size for testimonial images */
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial-text p {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.map-container {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.map-container h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: #2f2f2f;
+    margin-bottom: 15px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
 }
 
 .tangerine-bold {
@@ -26,69 +156,11 @@ header {
   font-style: normal;
   color: black;
   text-align: center;
- 
   font-size: 5em;
   margin-top: 60px;
- 
   margin-bottom: 40px;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
-
-.contact-container {
-  margin-top: 40px;
-  margin-bottom: 100px;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 15px;
-}
-
-.contact-info-box h2 {
-  font-family: "Playfair Display", serif;
-  color: #2f2f2f;
-  font-weight: 700;
-}
-
-.contact-info-box p,
-.contact-info-box a {
-  font-family: "Poppins", sans-serif;
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.5;
-  text-decoration: none;
-}
-
-.contact-form label {
-  font-weight: 500;
-  font-family: "Poppins", sans-serif;
-}
-
-.contact-form input,
-.contact-form textarea {
-  border-radius: 10px;
-  border: 1px solid #ccc;
-}
-
-.contact-form button {
-  font-family: "Poppins", sans-serif;
-  border-radius: 10px;
-  padding: 10px;
-  font-weight: 500;
-}
-.map-container {
-  margin-top: 60px;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.map-container h2 {
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  color: #2f2f2f;
-}
-
-
 
 .bottom-banner {
   position: fixed;
@@ -102,43 +174,53 @@ header {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  
 }
+
 
 .banner-text {
   font-family: "Tangerine", cursive;
   font-size: 2em;
-  margin: 0;
+  margin-top: 60;
 }
 
+
 .navbar {
-  background-color: rgba(0, 0, 0, 0.6);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar a {
-  color: white
+    color: white;
 }
 
 @media (max-width: 768px) {
-  .navbar-menu {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 20px;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 100%;
-    border-radius: 0 0 10px 10px;
-  }
+    .contact-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
 
-  .navbar-menu.active {
-    display: flex;
-  }
+    .contact-card {
+        width: 100%;
+    }
 
-  .navbar-toggle {
-    display: flex;
-  }
+    .side-by-side-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .testimonial-container {
+        flex: 1;
+        width: 100%;
+    }
+
+    .testimonial img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .map-container {
+        width: 100%;
+        margin-top: 20px;
+    }
 }
+
