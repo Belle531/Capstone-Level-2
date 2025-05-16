@@ -96,9 +96,9 @@ header {
 
 @keyframes scrollText {
     0% {
-        transform: translateX(0%); /* Start at the initial off-screen position */
+        transform: translateX(0%); 
     }
     100% {
-        transform: translateX(-150%); /* Move it far enough to the left to disappear */
+        transform: translateX(-150%); 
     }
 }
