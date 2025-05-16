@@ -45,15 +45,16 @@ The project meets the following requirements:
 * [x] Multiple HTML pages with Bootstrap Navbar
 * [x] HTML5 semantic elements
 * [x] Accessibility best practices (alt text)
-* [x] Bootstrap components (Cards, Spinners, Badges, Rows/Columns, Alerts, Buttons)
+* [x] Bootstrap components (Cards, Spinners, Badges, Rows/Columns)
+* [x] Bootstrap components Badges, Rows/Columns Contact file
 * [x] Form with input fields, dropdown, checkbox, and radio buttons
-* [x] Client-side form validation with Bootstrap styles
-* [x] Table with meaningful data and Bootstrap styling
-* [x] Two external API calls
-* [x] JavaScript for DOM manipulation
-* [x] Preformatted text using `<pre>` tag
-* [ ] Form submission modifies the page dynamically (INCOMPLETE)
-* [ ] ARIA attributes (INCOMPLETE)
+* [x] Client-side form validation with Bootstrap styles Decorations
+* [x] Table with meaningful data and Bootstrap styling Services
+* [x] Two external API calls HTML index, Services and Decorationsideas
+* [x] JavaScript for DOM manipulation All HTML files
+* [x] Preformatted text using `<pre>` tag service
+* [x] Form submission modifies the page dynamically Contact
+* [x] ARIA attributes Services
 
 ## Instructions to Run the Website
 
