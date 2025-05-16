@@ -98,3 +98,23 @@ video {
     display: flex;
   }
 }
+
+
+.banner-text {
+  font-family: "Tangerine", cursive;
+  font-size: 2em;
+  margin: 0;
+  padding-left: 100%;
+  white-space: nowrap;
+  animation: scrollText 60s linear infinite; 
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(0%); /* Start at the initial off-screen position */
+    }
+    100% {
+        transform: translateX(-150%); /* Move it far enough to the left to disappear */
+    }
+}
+
