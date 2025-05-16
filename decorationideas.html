@@ -88,19 +88,23 @@
 
     <div class="overlay hidden"></div>
 
-    <div class="container mt-8">
+    <main class="container mt-8">
         <div class="d-flex justify-content-center">
             <input type="text" id="search-input" class="form-control me-2" placeholder="Search for decoration ideas (e.g., wedding centerpieces, baby shower balloons)" style="max-width: 500px;">
             <button id="search-button" class="btn btn-success">Search</button>
         </div>
         <div id="image-results" class="row mt-4">
+            <div id="loading-spinner" class="d-flex justify-content-center">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
             </div>
-    </div>
-
-    <div class="bottom-banner">
-        <p class="banner-text">
-            Greenwood Venue is Your Space to Celebrate</p>
-    </div>
+        </div>
+        <div class="bottom-banner">
+            <p class="banner-text">
+                Greenwood Venue is Your Space to Celebrate</p>
+        </div>
+    </main>
 
     <script src="decorationideas.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

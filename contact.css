@@ -223,3 +223,10 @@ header {
     }
 }
 
+.form-control.is-invalid {
+  border-color: #dc3545;
+}
+.invalid-feedback {
+  color: #dc3545;
+}
+
