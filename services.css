@@ -1,3 +1,4 @@
+/* services.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -25,9 +26,9 @@ header {
     font-style: normal;
     color: black;
     text-align: center;
-    font-size: 5em;
+    font-size: 4em; /* Reduced font size */
     margin-top: px;
-    margin-bottom: 40px;
+    margin-bottom: 15px; /* Reduced margin */
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
@@ -39,6 +40,7 @@ header {
 .poppins-semibold {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
+    font-size: 1.1rem; /* Slightly reduced font size */
 }
 
 .bottom-banner {
@@ -48,7 +50,7 @@ header {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    padding: 15px 20px;
+    padding: 10px 15px; /* Reduced padding */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +59,7 @@ header {
 
 .banner-text {
     font-family: "Tangerine", cursive;
-    font-size: 2em;
+    font-size: 1.8em; /* Reduced font size */
     margin: 0;
 }
 
@@ -88,26 +90,26 @@ header {
 
 .service-card .card-title {
     color: #333;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.6rem; /* Reduced margin */
+    font-size: 1rem; /* Reduced font size */
 }
 
 .service-card .card-text {
     color: #666;
-    font-size: 0.9rem;
+    font-size: 0.85rem; /* Reduced font size */
+    margin-bottom: 0.4rem; /* Reduced margin */
 }
 
 #image-results img {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem; /* Reduced margin */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
-
 #spinner {
-    margin-left: 0.5rem;
+    margin-left: 0.4rem; /* Reduced margin */
 }
 
 @media (max-width: 768px) {
@@ -116,7 +118,7 @@ header {
         flex-direction: column;
         gap: 10px;
         background-color: rgba(0, 0, 0, 0.9);
-        padding: 20px;
+        padding: 15px; /* Reduced padding */
         position: absolute;
         top: 100%;
         right: 0;
@@ -133,167 +135,110 @@ header {
     }
 
     .tangerine-bold {
-        font-size: 3em;
-        margin-top: 40px;
-        margin-bottom: 30px;
+        font-size: 2.5em; /* Reduced font size */
+        margin-top: 30px;
+        margin-bottom: 10px; /* Reduced margin */
     }
 
     .bottom-banner .banner-text {
-        font-size: 1.5em;
+        font-size: 1.3em; /* Reduced font size */
     }
 }
 
-/* services.css */
-/* ... your existing CSS ... */
+/* Styling for the services table section */
+.table-responsive {
+    margin-top: 5px; /* Reduced margin */
+    margin-bottom: 15px; /* Reduced margin */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
 
-.center-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.table {
     width: 100%;
+    margin-bottom: 0.8rem; /* Reduced margin */
+    color: #212529;
+    border-collapse: collapse;
+    font-size: 0.9rem; /* Reduced font size */
 }
 
-.service-content {
-    width: 90%;
-    max-width: 1200px;
+.table th,
+.table td {
+    padding: 0.6rem; /* Reduced padding */
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    text-align: left;
 }
 
-/* Adjust the row for the three-column layout */
-.service-row {
-    display: flex;
-    justify-content: center;
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    font-size: 1rem; /* Slightly reduced font size for header */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+    border-bottom-width: 2px;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+    color: #495057;
+}
+
+/* Style for the filter dropdown */
+.form-select {
     width: 100%;
-}
-
-.service-row  {
-    /* Example: Make each column take up a bit more than 1/3 */
-    width: 35%;
-    margin-right: 2%;
-    margin-left: 2%; 
-    &:nth-child(2) {
-    width: 50%;
-    }
-    /* Example: Make the middle column wider */
-    /* &:nth-child(2) {
-        width: 50%;
-    } */
-}
-
-/* Center the "Our Services" heading */
-.services-heading {
-    text-align: center;
-}
-
-/* Center the music inspiration section */
-.music-inspiration {
-    text-align: center;
-}
-
-.music-inspiration .d-flex {
-    justify-content: center !important;
-}
-
-.music-inspiration .mt-3 {
-    text-align: center !important;
-}
-/* services.css */
-/* ... your existing CSS ... */
-
-/* Center the content within the middle column */
-.col-md-4:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content horizontally */
-}
-
-/* Adjust the alignment and width of the unordered list */
-.col-md-4:nth-child(2) > ul.list-unstyled {
-    text-align: left; /* Align text within list items to the left */
-    width: 300%; /* Adjust width as needed */
-    max-width: 300px; /* Optional: max width */
-}
-
-/* Center the music inspiration section */
-.music-inspiration {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.music-inspiration .d-flex {
-    justify-content: center !important;
-}
-
-.music-inspiration .mt-3 {
-    text-align: center !important;
-}
-
-/* Ensure carousels maintain their display properties */
-.carousel {
-    display: block; /* Ensure carousel is treated as a block-level element */
-}
-/* services.css */
-/* ... your existing CSS ... */
-
-/* Style the "Find Music" button */
-#music-search-button  {
-    background-color: #198754; /* Set the background color */
-    color: #fff; /* Set the text color to white for better contrast */
-    padding: 0.5rem 1rem;
-    border-radius: 0.2rem;
-    cursor: pointer;
-    font-size: 0.9rem;
+    max-width: 250px; /* Reduced max width */
+    margin-bottom: 8px; /* Reduced margin */
     font-family: 'Poppins', sans-serif;
-    transition: background-color 0.2s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+    font-size: 0.9rem; /* Reduced font size */
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 0.4rem 0.6rem; /* Reduced padding */
 }
 
-/* Hover effect for the button */
-#music-search-button:hover {
-    background-color: #135e3d; /* Darken the background on hover */
-    border-color: #135e3d;
+.form-label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-bottom: 0.2rem; /* Reduced margin */
+    display: block;
+    color: #333;
+    font-size: 1rem; /* Slightly reduced font size */
 }
 
-/* Style the spinner to match the button color */
-#music-spinner {
-    border-color: white; /* Spinner color */
-    border-top-color: transparent; /* Make the top part transparent for the spinning effect */
+/* Styling for the meal suggestions section */
+#mealResultsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust minmax for smaller cards */
+    gap: 15px; /* Reduced gap */
 }
 
-/* Center the content within the middle column */
-.col-md-4:nth-child(2) {
+.meal-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 100%; /* Make cards take full height of the row */
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
 }
 
-/* Adjust the alignment and width of the unordered list */
-.col-md-4:nth-child(2) > ul.list-unstyled {
-    text-align: left; /* Align text within list items to the left */
-    width: 80%; /* Adjust width as needed */
-    max-width: 300px; /* Optional: max width */
-}
-
-/* Center the music inspiration section */
-.music-inspiration {
+.meal-card img {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    height: auto;
+    border-bottom: 1px solid #eee;
 }
 
-.music-inspiration .d-flex {
-    justify-content: center !important;
-}
-
-.music-inspiration .mt-3 {
-    text-align: center !important;
-}
-
-/* Ensure carousels maintain their display properties */
-.carousel {
-    display: block; /* Ensure carousel is treated as a block-level element */
-}
+.meal-card-body {
+    padding: 10px; /* Reduced padding
